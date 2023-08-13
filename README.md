@@ -8,7 +8,7 @@
 - _Step 3_: Automated download of all full-text articles that match the specified search query.
 - _Step 4_: Automated curation and cleaning of article text for all downloaded articles.
 - _Step 5_: Automated extraction of relevant text segments and emphasis of potential keywords.
-- _Step 6_: Automated scoring of the presence or absence of circular redundant explanations based on manual evaluation of specified criteria.
+- _Step 6_: Automated scoring of the presence or absence of circular analyses based on manual evaluation of specified criteria.
 - _Step 7_: Automated storage of collated evaluations and scores in a simple database and a summary table.
 
 
@@ -38,8 +38,8 @@
     - The article accession number and abstract are highlighted in gray.
   - The _Evaluation_ tab shows the scoring and evaluation for each article:
     - _Condition 1_ determines the suitability of the article for evaluation.
-    - _Conditions 2–3_ determine the presence or absence of circular redundant explanations.
-    - _Condition 4_ evaluates the presence of circular redundant explanations from _Conditions 1–3_.
+    - _Conditions 2–3_ determine the presence or absence of circular analyses.
+    - _Condition 4_ evaluates the presence of circular analyses from _Conditions 1–3_.
 - The collated evaluations and scores are stored in the ./results folder:
   - The file `./results/summary.csv` contains a summary table with article accession numbers and evaluations.
   - The file `./results/results.zip/records.json` contains the database of curated article data and evaluations.
