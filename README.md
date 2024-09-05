@@ -1,5 +1,29 @@
 ## Pipeline for semi-automated analysis of network-neuroscience literature
 
+### Requirements
+
+- Jupyter Notebook running Python 3. <https://docs.jupyter.org/en/latest/install.html>
+- Python packages and versions: python 3.11, notebook 6.5, ipywidgets 7.8, requests, html2text.
+- Additional requirements for reproducing the full analysis:
+  - Ability to download reference records from the _Web of Science_ website.
+  - Ability to download full-text articles from individual journal websites.
+
+
+### Setup via virtual environment
+- The following commands establish a working virtual environment:
+
+1. Using native Python (via `requirements.txt`):
+```
+cd /path/to/litrev
+python3 -m venv litrev_env
+source litrev_env/bin/activate
+pip install -r requirements.txt
+```
+2. Using Anaconda (<https://anaconda.org/>):
+```
+conda create -n litrev_env python=3.11 notebook=6.5 ipywidgets=7.8 anaconda::requests conda-forge::html2text
+conda activate litrev_env
+```
 
 ### Summary
 
@@ -10,16 +34,6 @@
 - _Step 5_: Automated extraction of relevant text segments and emphasis of potential keywords.
 - _Step 6_: Automated scoring of the presence or absence of circular analyses based on manual evaluation of specified criteria.
 - _Step 7_: Automated storage of collated evaluations and scores in a simple database and a summary table.
-
-
-### Requirements
-
-- _Jupyter Notebook_ environment running _Python 3_. <https://docs.jupyter.org/en/latest/install.html>, <https://docs.python.org/3/installing/index.html>
-- The `ipywidgets` python module for displaying widgets.
-- Additional requirements for reproducing the full analysis:
-  - The `requests` and `html2text` python modules.
-  - Ability to download reference records from the _Web of Science_ website.
-  - Ability to download full-text articles from individual journal websites.
 
 
 ### Execution
